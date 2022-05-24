@@ -1,4 +1,4 @@
-package ed.arturo;
+package ed.victor;
 
 public class Calculadora {
 	
