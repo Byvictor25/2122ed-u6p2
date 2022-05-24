@@ -53,5 +53,66 @@ public class Calculadora {
 		public int diveix(int a, int b) {
 		return a/b;
 	}
+		
+/**
+ * Realiza el resultado de elevar la base al exponente
+ * @param base
+ * @param exponente
+ * @return resultado de la operacion
+ */
+		public int elevar ( int base , int exponente ){
+
+		    int resultado = 1;
+
+		    for ( int i = 0; i < exponente ; i++ ){
+		        resultado = resultado * base;
+		    }
+
+		    return resultado; 
+
+		}
+		
+	/**
+	 * Comprueba si el numero pasado como parametro es par		
+	 * @param numeroComprobar
+	 * @return un booleano diciendo si es par o no
+	 */
+		public boolean esPar ( int numeroComprobar ){
+
+		    boolean esPar;
+
+		    if ( numeroComprobar % 2 == 0) {
+		        esPar = true;
+		    } else {
+		        esPar = false;
+		    }
+
+		    return esPar;
+
+		}
+		
+	/**
+	 * Realiza la conversion de un numero pasado como parametro a binario
+	 * @param numero
+	 * @return el binario del numero pasado como parametro
+	 */
+		
+		public String toBinario(int numero){
+
+			String binario = "";
+		    int aux = numero;
+		    int v1;
+
+		    while ( aux > 0) {
+
+		        v1 = aux % 2;
+
+		        binario = v1 + binario;
+
+		        aux = aux / 2;
+
+		    }
+		    return binario;
+		}
 	
 }
