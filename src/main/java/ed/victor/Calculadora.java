@@ -19,8 +19,7 @@ public class Calculadora {
  * @param b 2º numero de la suma
  * @return el resultado de sumar el parámetro a más el parametro b
  */ 
-	
-	public int suma(int a, int b) {
+		public int suma(int a, int b) {
 		return a + b;
 	}
 	
@@ -40,8 +39,7 @@ public class Calculadora {
  * @param b 2º numero de la multiplicacion
  * @return el producto de multiplicar el parametro a con el parametro b
  */
-	
-	public int multiplica(int a, int b){
+		public int multiplica(int a, int b){
 		return a*b;
 	}
 	
@@ -50,10 +48,9 @@ public class Calculadora {
  * @param a dividendo de la division
  * @param b divisor de la division
  * @return el cociente de la division del parametro a y el parametro b
- * @throws 
+ * @throws ArithmeticException si el divisor es 0
  */
-	
-	public int diveix(int a, int b) {
+		public int diveix(int a, int b) {
 		return a/b;
 	}
 	
